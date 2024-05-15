@@ -228,11 +228,10 @@ function useElementResize(ref, options) {
       window.addEventListener('mouseup', onResizeEndBottomRight);
     }
     function onMouseDown(e) {
-      if (e.type == "mousedown") {
+      if (e.type == 'mousedown') {
         originMouseX = e.pageX;
         originMouseY = e.pageY;
-      }
-      else if (e.type == "touchstart") {
+      } else if (e.type == 'touchstart') {
         originMouseX = e.touches[0].pageX;
         originMouseY = e.touches[0].pageY;
       }
@@ -410,11 +409,10 @@ function useCursor(ref, threshold, resizable) {
 
 function getComputedPagePosition(e, boundary) {
   let pageX, pageY;
-  if (e.type.includes("mouse")) {
+  if (e.type.includes('mouse')) {
     pageX = e.pageX;
     pageY = e.pageY;
-  }
-  else if (e.type.includes("touch")) {
+  } else if (e.type.includes('touch')) {
     pageX = e.changedTouches[0].pageX;
     pageY = e.changedTouches[0].pageY;
   }
