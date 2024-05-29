@@ -89,13 +89,13 @@ function Icon({
 
 const IconsContainer = styled.div`
   position: absolute;
-  margin-top: 40px;
-  margin-left: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
 `;
 
 const StyledIcon = styled(Icon)`
   width: 70px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
