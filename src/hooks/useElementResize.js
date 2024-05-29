@@ -237,6 +237,7 @@ function useElementResize(ref, options) {
       }
       _boundary = { ...boundary };
       if (dragTarget && e.target === dragTarget) {
+        e.preventDefault();
         shouldCover = true;
         return onDragStart(e);
       }
@@ -293,6 +294,7 @@ function useElementResize(ref, options) {
     target.addEventListener('touchstart', onMouseDown);
     return () => {
       target.removeEventListener('mousedown', onMouseDown);
+      target.removeEventListener('touchstart', onMouseDown);
       window.removeEventListener('mousemove', onDraggingLeft);
       window.removeEventListener('mousemove', onDraggingTop);
       window.removeEventListener('mousemove', onDragging);
