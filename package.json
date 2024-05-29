@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "author": "ShizukuIchi <shizukuichi@gmail.com>",
-  "homepage": "https://winxp.now.sh",
+  "homepage": "https://claudeconseil.fr",
   "dependencies": {
     "lodash.samplesize": "^4.2.0",
     "react": "^16.8.6",
@@ -19,7 +19,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "now-build": "react-scripts build",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
