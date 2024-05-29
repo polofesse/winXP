@@ -5,7 +5,9 @@ import { WindowDropDowns } from 'components';
 import dropDownData from './dropDownData';
 
 export default function Notepad({ onClose }) {
-  const [docText, setDocText] = useState('');
+  const [docText, setDocText] = useState(
+    "Bienvenue sur le site des Mystérieuses Aventures de Claude Conseil \nLe site est encore en construction, et l'affichage est adapté à un ordinateur de bureau \nBonne visite!",
+  );
   const [wordWrap, setWordWrap] = useState(false);
 
   function onClickOptionItem(item) {
