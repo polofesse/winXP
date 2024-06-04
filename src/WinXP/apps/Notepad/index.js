@@ -1,11 +1,13 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 import { WindowDropDowns } from 'components';
 import dropDownData from './dropDownData';
 
 export default function Notepad({ onClose }) {
-  const [docText, setDocText] = useState('');
+  const [docText, setDocText] = useState(
+    "Bienvenue sur le site du film\nLes Mystérieuses Aventures de Claude Conseil \nLe site est encore en construction, \net l'affichage est adapté à un ordinateur de bureau \nBonne visite!",
+  );
   const [wordWrap, setWordWrap] = useState(false);
   useEffect(() => {
     fetch('/presentation.html')
