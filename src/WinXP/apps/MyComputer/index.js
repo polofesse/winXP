@@ -352,18 +352,18 @@ function MyComputer({ onClose }) {
                   <div className="com__content__right__card__text">Github</div>
                 </a>
                 <a
-                  href="https://sh1zuku.csie.io"
+                  href="https://www.youtube.com/channel/UCW1nsF3lbwEn6oD0Pv3AQ7g"
                   target="_blank"
                   rel="noreferrer"
                   className="com__content__right__card__item--me"
                 >
                   <img
                     className="com__content__right__card__img"
-                    src="https://a.ppy.sh/2926513_1448497605.png"
+                    src="https://imgur.com/c8Wrnl9.png"
                     alt="control"
                   />
                   <div className="com__content__right__card__text">
-                    My Website
+                    Claude Conseil Ornithologie
                   </div>
                 </a>
               </div>

@@ -16,6 +16,8 @@ import notepadLarge from 'assets/windowsIcons/327(32x32).png';
 import winamp from 'assets/windowsIcons/winamp.png';
 import paintLarge from 'assets/windowsIcons/680(32x32).png';
 import paint from 'assets/windowsIcons/680(16x16).png';
+import GalleryIco from 'assets/windowsIcons/GalleryIco.png';
+import Gallery from './Gallery';
 
 const gen = () => {
   let id = -1;
@@ -27,15 +29,29 @@ const gen = () => {
 const genId = gen();
 const genIndex = gen();
 export const defaultAppState = [
+  // {
+  //   component: InternetExplorer,
+  //   header: {
+  //     title: 'Internet Explorer',
+  //     icon: iePaper,
+  //   },
+  //   defaultSize: {
+  //     width: 700,
+  //     height: 500,
+  //   },
+  //   defaultOffset: {
+  //     x: 130,
+  //     y: 20,
+  //   },
   {
-    component: InternetExplorer,
+    component: Notepad,
     header: {
       title: 'Internet Explorer',
       icon: iePaper,
     },
     defaultSize: {
-      width: 700,
-      height: 500,
+      width: 400,
+      height: 300,
     },
     defaultOffset: {
       x: 130,
@@ -47,67 +63,87 @@ export const defaultAppState = [
     id: genId(),
     zIndex: genIndex(),
   },
-  {
-    component: Minesweeper,
-    header: {
-      title: 'Minesweeper',
-      icon: mine,
-    },
-    defaultSize: {
-      width: 0,
-      height: 0,
-    },
-    defaultOffset: {
-      x: 180,
-      y: 170,
-    },
-    resizable: false,
-    minimized: false,
-    maximized: false,
-    id: genId(),
-    zIndex: genIndex(),
-  },
-  {
-    component: Winamp,
-    header: {
-      title: 'Winamp',
-      icon: winamp,
-      invisible: true,
-    },
-    defaultSize: {
-      width: 0,
-      height: 0,
-    },
-    defaultOffset: {
-      x: 0,
-      y: 0,
-    },
-    resizable: false,
-    minimized: false,
-    maximized: false,
-    id: genId(),
-    zIndex: genIndex(),
-  },
-  {
-    component: MyComputer,
-    header: {
-      title: 'My Computer',
-      icon: computer,
-    },
-    defaultSize: {
-      width: 660,
-      height: 500,
-    },
-    defaultOffset: {
-      x: 250,
-      y: 40,
-    },
-    resizable: true,
-    minimized: false,
-    maximized: window.innerWidth < 800,
-    id: genId(),
-    zIndex: genIndex(),
-  },
+  // {
+  //   component: Gallery,
+  //   header: {
+  //     title: 'Photos',
+  //     icon: GalleryIco,
+  //   },
+  //   defaultSize: {
+  //     width: window.innerWidth,
+  //     height: window.innerWidth * (1 / 1.48),
+  //   },
+  //   defaultOffset: {
+  //     x: (window.innerWidth - window.innerWidth) / 2,
+  //     y: 0,
+  //   },
+  //   resizable: true,
+  //   minimized: false,
+  //   // maximized: window.innerWidth < 800,
+  //   id: genId(),
+  //   zIndex: genIndex(),
+  // },
+  // {
+  //   component: Minesweeper,
+  //   header: {
+  //     title: 'Minesweeper',
+  //     icon: mine,
+  //   },
+  //   defaultSize: {
+  //     width: 0,
+  //     height: 0,
+  //   },
+  //   defaultOffset: {
+  //     x: 180,
+  //     y: 170,
+  //   },
+  //   resizable: false,
+  //   minimized: false,
+  //   maximized: false,
+  //   id: genId(),
+  //   zIndex: genIndex(),
+  // },
+  // {
+  //   component: Winamp,
+  //   header: {
+  //     title: 'Winamp',
+  //     icon: winamp,
+  //     invisible: true,
+  //   },
+  //   defaultSize: {
+  //     width: 0,
+  //     height: 0,
+  //   },
+  //   defaultOffset: {
+  //     x: 0,
+  //     y: 0,
+  //   },
+  //   resizable: false,
+  //   minimized: false,
+  //   maximized: false,
+  //   id: genId(),
+  //   zIndex: genIndex(),
+  // },
+  // {
+  //   component: MyComputer,
+  //   header: {
+  //     title: 'My Computer',
+  //     icon: computer,
+  //   },
+  //   defaultSize: {
+  //     width: 660,
+  //     height: 500,
+  //   },
+  //   defaultOffset: {
+  //     x: 250,
+  //     y: 40,
+  //   },
+  //   resizable: true,
+  //   minimized: false,
+  //   maximized: window.innerWidth < 800,
+  //   id: genId(),
+  //   zIndex: genIndex(),
+  // },
 ];
 
 export const defaultIconState = [
@@ -153,6 +189,13 @@ export const defaultIconState = [
     component: Paint,
     isFocus: false,
   },
+  {
+    id: 6,
+    icon: GalleryIco,
+    title: 'Photos',
+    component: Gallery,
+    isFocus: false,
+  },
 ];
 
 export const appSettings = {
@@ -193,6 +236,24 @@ export const appSettings = {
     minimized: false,
     maximized: false,
     multiInstance: true,
+  },
+  Gallery: {
+    header: {
+      icon: GalleryIco,
+      title: 'Photos',
+    },
+    component: Gallery,
+    defaultSize: {
+      width: window.innerWidth,
+      height: window.innerWidth * (9 / 16) + 94,
+    },
+    defaultOffset: {
+      x: (window.innerWidth - window.innerWidth) / 2,
+      y: 0,
+    },
+    resizable: true,
+    minimized: false,
+    // maximized: window.innerWidth < 800,
   },
   Error: {
     header: {
@@ -294,4 +355,12 @@ export const appSettings = {
   },
 };
 
-export { InternetExplorer, Minesweeper, ErrorBox, MyComputer, Notepad, Winamp };
+export {
+  InternetExplorer,
+  Minesweeper,
+  ErrorBox,
+  MyComputer,
+  Notepad,
+  Winamp,
+  Gallery,
+};
