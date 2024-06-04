@@ -1,15 +1,19 @@
-import React, { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 import { WindowDropDowns } from 'components';
 import dropDownData from './dropDownData';
 
 export default function Notepad({ onClose }) {
-  const [docText, setDocText] = useState(
-    "Bienvenue sur le site des Mystérieuses Aventures de Claude Conseil \nLe site est encore en construction, et l'affichage est adapté à un ordinateur de bureau \nBonne visite!",
-  );
+  const [docText, setDocText] = useState('');
   const [wordWrap, setWordWrap] = useState(false);
-
+  useEffect(() => {
+    fetch('/presentation.html')
+      .then(response => response.text())
+      .then(data => {
+        setDocText(data);
+      });
+  }, []);
   function onClickOptionItem(item) {
     switch (item) {
       case 'Exit':
