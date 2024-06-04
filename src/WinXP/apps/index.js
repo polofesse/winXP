@@ -46,12 +46,12 @@ export const defaultAppState = [
   {
     component: Notepad,
     header: {
-      title: 'Internet Explorer',
-      icon: iePaper,
+      title: 'Bienvenue!',
+      icon: notepad,
     },
     defaultSize: {
-      width: 400,
-      height: 300,
+      width: 380,
+      height: 500,
     },
     defaultOffset: {
       x: 130,
