@@ -326,8 +326,8 @@ export const appSettings = {
       height: 0,
     },
     defaultOffset: {
-      x: 0,
-      y: 0,
+      x: 10,
+      y: 20,
     },
     resizable: false,
     minimized: false,
