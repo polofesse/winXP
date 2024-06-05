@@ -217,7 +217,7 @@ export const defaultIconState = [
     isFocus: false,
   },
   {
-    id: 7,
+    id: 8,
     icon: generiqueIco,
     title: 'Générique',
     component: Player2,
