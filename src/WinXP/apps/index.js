@@ -327,8 +327,8 @@ export const appSettings = {
   },
   Player2: {
     header: {
-      icon: BerettaIco,
-      title: 'Beretta',
+      icon: generiqueIco,
+      title: 'Générique',
     },
     component: Player2,
     defaultSize: {
