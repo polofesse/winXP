@@ -88,10 +88,11 @@ function Icon({
 }
 
 const IconsContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // Crée deux colonnes de taille égale
+  align-items: center; // Centre les éléments verticalement dans chaque cellule
   gap: 10px; // Espacement entre les icônes
-  width: 160px; // Largeur totale pour deux icônes
+  position: absolute;
   margin-top: 30px;
   margin-left: 30px;
 `;
