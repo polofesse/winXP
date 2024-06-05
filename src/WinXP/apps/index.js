@@ -18,10 +18,12 @@ import paintLarge from 'assets/windowsIcons/680(32x32).png';
 import paint from 'assets/windowsIcons/680(16x16).png';
 import GalleryIco from 'assets/windowsIcons/GalleryIco.png';
 import Gallery from './Gallery';
+import Gallery2 from './Gallery2';
 import BerettaIco from 'assets/windowsIcons/beretta.png';
 import Player from './Player';
 import generiqueIco from 'assets/windowsIcons/generiqueIco.png';
 import Player2 from './Player2';
+import Noteprix from './Noteprix';
 
 const gen = () => {
   let id = -1;
@@ -175,7 +177,7 @@ export const defaultIconState = [
   {
     id: 3,
     icon: notepadLarge,
-    title: 'Notepad',
+    title: 'Bienvenue!',
     component: Notepad,
     isFocus: false,
   },
@@ -187,7 +189,7 @@ export const defaultIconState = [
     isFocus: false,
   },
   {
-    id: 5,
+    id: 8,
     icon: paintLarge,
     title: 'Paint',
     component: Paint,
@@ -201,10 +203,17 @@ export const defaultIconState = [
     isFocus: false,
   },
   {
+    id: 9,
+    icon: GalleryIco,
+    title: 'Photos',
+    component: Gallery,
+    isFocus: false,
+  },
+  {
     id: 7,
-    icon: BerettaIco,
+    icon: notepadLarge,
     title: 'Beretta',
-    component: Player,
+    component: Gallery2,
     isFocus: false,
   },
   {
@@ -212,6 +221,13 @@ export const defaultIconState = [
     icon: generiqueIco,
     title: 'Générique',
     component: Player2,
+    isFocus: false,
+  },
+  {
+    id: 5,
+    icon: notepadLarge,
+    title: 'Sélections et Prix',
+    component: Noteprix,
     isFocus: false,
   },
 ];
@@ -261,6 +277,24 @@ export const appSettings = {
       title: 'Photos',
     },
     component: Gallery,
+    defaultSize: {
+      width: window.innerWidth,
+      height: window.innerWidth * (9 / 16) + 94,
+    },
+    defaultOffset: {
+      x: (window.innerWidth - window.innerWidth) / 2,
+      y: 0,
+    },
+    resizable: true,
+    minimized: false,
+    // maximized: window.innerWidth < 800,
+  },
+  Gallery2: {
+    header: {
+      icon: GalleryIco,
+      title: 'Photos Tournage',
+    },
+    component: Gallery2,
     defaultSize: {
       width: window.innerWidth,
       height: window.innerWidth * (9 / 16) + 94,
@@ -352,12 +386,31 @@ export const appSettings = {
   Notepad: {
     header: {
       icon: notepad,
-      title: 'Untitled - Notepad',
+      title: 'Bienvenue!',
     },
     component: Notepad,
     defaultSize: {
       width: 660,
       height: 500,
+    },
+    defaultOffset: {
+      x: 270,
+      y: 60,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: window.innerWidth < 800,
+    multiInstance: true,
+  },
+  Noteprix: {
+    header: {
+      icon: notepad,
+      title: 'Séléctions et Prix',
+    },
+    component: Noteprix,
+    defaultSize: {
+      width: 460,
+      height: 600,
     },
     defaultOffset: {
       x: 270,
@@ -417,6 +470,8 @@ export {
   Notepad,
   Winamp,
   Gallery,
+  Gallery2,
   Player,
   Player2,
+  Noteprix,
 };
