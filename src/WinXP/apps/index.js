@@ -205,15 +205,15 @@ export const defaultIconState = [
   {
     id: 9,
     icon: GalleryIco,
-    title: 'Photos',
-    component: Gallery,
+    title: 'Photos tournage',
+    component: Gallery2,
     isFocus: false,
   },
   {
     id: 7,
-    icon: notepadLarge,
+    icon: BerettaIco,
     title: 'Beretta',
-    component: Gallery2,
+    component: Player,
     isFocus: false,
   },
   {
@@ -297,7 +297,7 @@ export const appSettings = {
     component: Gallery2,
     defaultSize: {
       width: window.innerWidth,
-      height: window.innerWidth * (9 / 16) + 94,
+      height: 10,
     },
     defaultOffset: {
       x: (window.innerWidth - window.innerWidth) / 2,
