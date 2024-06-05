@@ -88,7 +88,10 @@ function Icon({
 }
 
 const IconsContainer = styled.div`
-  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; // Espacement entre les icônes
+  width: 160px; // Largeur totale pour deux icônes
   margin-top: 30px;
   margin-left: 30px;
 `;

@@ -18,6 +18,10 @@ import paintLarge from 'assets/windowsIcons/680(32x32).png';
 import paint from 'assets/windowsIcons/680(16x16).png';
 import GalleryIco from 'assets/windowsIcons/GalleryIco.png';
 import Gallery from './Gallery';
+import BerettaIco from 'assets/windowsIcons/beretta.png';
+import Player from './Player';
+import generiqueIco from 'assets/windowsIcons/generiqueIco.png';
+import Player2 from './Player2';
 
 const gen = () => {
   let id = -1;
@@ -196,6 +200,20 @@ export const defaultIconState = [
     component: Gallery,
     isFocus: false,
   },
+  {
+    id: 7,
+    icon: BerettaIco,
+    title: 'Beretta',
+    component: Player,
+    isFocus: false,
+  },
+  {
+    id: 7,
+    icon: generiqueIco,
+    title: 'Générique',
+    component: Player2,
+    isFocus: false,
+  },
 ];
 
 export const appSettings = {
@@ -246,6 +264,42 @@ export const appSettings = {
     defaultSize: {
       width: window.innerWidth,
       height: window.innerWidth * (9 / 16) + 94,
+    },
+    defaultOffset: {
+      x: (window.innerWidth - window.innerWidth) / 2,
+      y: 0,
+    },
+    resizable: true,
+    minimized: false,
+    // maximized: window.innerWidth < 800,
+  },
+  Player: {
+    header: {
+      icon: BerettaIco,
+      title: 'Beretta',
+    },
+    component: Player,
+    defaultSize: {
+      width: 646,
+      height: 392,
+    },
+    defaultOffset: {
+      x: (window.innerWidth - window.innerWidth) / 2,
+      y: 0,
+    },
+    resizable: true,
+    minimized: false,
+    // maximized: window.innerWidth < 800,
+  },
+  Player2: {
+    header: {
+      icon: BerettaIco,
+      title: 'Beretta',
+    },
+    component: Player2,
+    defaultSize: {
+      width: 646,
+      height: 392,
     },
     defaultOffset: {
       x: (window.innerWidth - window.innerWidth) / 2,
@@ -363,4 +417,6 @@ export {
   Notepad,
   Winamp,
   Gallery,
+  Player,
+  Player2,
 };
