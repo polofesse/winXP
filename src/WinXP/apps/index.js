@@ -189,7 +189,7 @@ export const defaultIconState = [
     isFocus: false,
   },
   {
-    id: 8,
+    id: 10,
     icon: paintLarge,
     title: 'Paint',
     component: Paint,
