@@ -51,6 +51,7 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
+import './MyGallery.css';
 
 const newImages = [
   'https://i.imgur.com/5n6g7yj.jpg',
