@@ -10,7 +10,7 @@ export default function Noteprix({ onClose }) {
   );
   const [wordWrap, setWordWrap] = useState(false);
   useEffect(() => {
-    fetch('/selections.html')
+    fetch(process.env.PUBLIC_URL + '/selections.html')
       .then(response => response.text())
       .then(data => {
         setDocText(data);
