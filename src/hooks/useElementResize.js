@@ -228,10 +228,10 @@ function useElementResize(ref, options) {
       window.addEventListener('mouseup', onResizeEndBottomRight);
     }
     function onMouseDown(e) {
-      if (e.type == 'mousedown') {
+      if (e.type === 'mousedown') {
         originMouseX = e.pageX;
         originMouseY = e.pageY;
-      } else if (e.type == 'touchstart') {
+      } else if (e.type === 'touchstart') {
         originMouseX = e.touches[0].pageX;
         originMouseY = e.touches[0].pageY;
       }
