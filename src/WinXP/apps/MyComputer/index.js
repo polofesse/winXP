@@ -22,7 +22,9 @@ import disk from 'assets/windowsIcons/334(48x48).png';
 import cd from 'assets/windowsIcons/111(48x48).png';
 import dropdown from 'assets/windowsIcons/dropdown.png';
 import pullup from 'assets/windowsIcons/pullup.png';
-import logo from 'assets/github-logo.png';
+import letterboxlogo from 'assets/windowsIcons/letterboxd-mac-icon.png';
+import imdbicon from 'assets/windowsIcons/imdblogo.png';
+import scicon from 'assets/windowsIcons//sclogo.png';
 import mine from 'assets/minesweeper/mine-icon.png';
 import windows from 'assets/windowsIcons/windows.png';
 
@@ -220,7 +222,7 @@ function MyComputer({ onClose }) {
               </div>
               <div className="com__content__left__card__content">
                 <div className="com__content__left__card__row">
-                  <iframe
+                  {/* <iframe
                     title="ghbtn"
                     style={{ margin: '0 0 3px -1px', height: '30px' }}
                     src="https://ghbtns.com/github-btn.html?user=ShizukuIchi&repo=winXP&type=star&count=true&size=large"
@@ -228,7 +230,7 @@ function MyComputer({ onClose }) {
                     scrolling="0"
                     width="170px"
                     height="20px"
-                  />
+                  /> */}
                 </div>
                 <div className="com__content__left__card__row">
                   <img
@@ -335,21 +337,23 @@ function MyComputer({ onClose }) {
             </div>
             <div className="com__content__right__card com__content__right__card--me">
               <div className="com__content__right__card__header">
-                About Me :)
+                Quelques liens :
               </div>
               <div className="com__content__right__card__content">
                 <a
-                  href="https://github.com/ShizukuIchi"
+                  href="https://letterboxd.com/film/the-mysterious-adventures-of-claude-conseil/"
                   target="_blank"
                   rel="noreferrer"
                   className="com__content__right__card__item--me"
                 >
                   <img
                     className="com__content__right__card__img"
-                    src={logo}
+                    src={letterboxlogo}
                     alt="control"
                   />
-                  <div className="com__content__right__card__text">Github</div>
+                  <div className="com__content__right__card__text">
+                    LetterboxHD
+                  </div>
                 </a>
                 <a
                   href="https://www.youtube.com/channel/UCW1nsF3lbwEn6oD0Pv3AQ7g"
@@ -364,6 +368,34 @@ function MyComputer({ onClose }) {
                   />
                   <div className="com__content__right__card__text">
                     Claude Conseil Ornithologie
+                  </div>
+                </a>
+                <a
+                  href="https://www.imdb.com/title/tt31229573/?language=fr-fr"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="com__content__right__card__item--me"
+                >
+                  <img
+                    className="com__content__right__card__img"
+                    src={imdbicon}
+                    alt="control"
+                  />
+                  <div className="com__content__right__card__text">Imdb</div>
+                </a>
+                <a
+                  href="https://www.senscritique.com/film/les_mysterieuses_aventures_de_claude_conseil/76375422"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="com__content__right__card__item--me"
+                >
+                  <img
+                    className="com__content__right__card__img"
+                    src={scicon}
+                    alt="control"
+                  />
+                  <div className="com__content__right__card__text">
+                    Sens Critique
                   </div>
                 </a>
               </div>

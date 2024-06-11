@@ -17,7 +17,7 @@ function Winamp({ onClose, onMinimize }) {
         // file, or served with permissive CORS HTTP headers:
         // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
         // Can be downloaded from https://github.com/captbaritone/webamp/raw/master/skins/TopazAmp1-2.wsz
-        url: 'Bluebird3.wsz',
+        url: 'Sony.wsz',
       },
     });
     webamp.current.renderWhenReady(target).then(() => {

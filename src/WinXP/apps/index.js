@@ -24,6 +24,7 @@ import Player from './Player';
 import generiqueIco from 'assets/windowsIcons/generiqueIco.png';
 import Player2 from './Player2';
 import Noteprix from './Noteprix';
+import Notecrit from './Notecrit';
 
 const gen = () => {
   let id = -1;
@@ -230,6 +231,13 @@ export const defaultIconState = [
     component: Noteprix,
     isFocus: false,
   },
+  {
+    id: 11,
+    icon: notepadLarge,
+    title: 'Critiques',
+    component: Notecrit,
+    isFocus: false,
+  },
 ];
 
 export const appSettings = {
@@ -372,7 +380,7 @@ export const appSettings = {
     component: MyComputer,
     defaultSize: {
       width: 660,
-      height: 500,
+      height: 650,
     },
     defaultOffset: {
       x: 260,
@@ -408,6 +416,25 @@ export const appSettings = {
       title: 'Séléctions et Prix',
     },
     component: Noteprix,
+    defaultSize: {
+      width: 460,
+      height: 600,
+    },
+    defaultOffset: {
+      x: 270,
+      y: 60,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: window.innerWidth < 800,
+    multiInstance: true,
+  },
+  Notecrit: {
+    header: {
+      icon: notepad,
+      title: 'Critiques',
+    },
+    component: Notecrit,
     defaultSize: {
       width: 460,
       height: 600,
@@ -474,4 +501,5 @@ export {
   Player,
   Player2,
   Noteprix,
+  Notecrit,
 };
