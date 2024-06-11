@@ -99,7 +99,7 @@ const IconsContainer = styled.div`
 
 const StyledIcon = styled(Icon)`
   width: 70px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
