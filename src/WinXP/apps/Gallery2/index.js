@@ -64,7 +64,7 @@ const newImages = [
   'https://i.imgur.com/YvU5Vpf.jpg',
 ].map(url => ({
   original: url,
-  thumbnail: url,
+  thumbnail: url.replace('.jpg', 't.jpg'),
 }));
 
 const GalleryComponent = () => {
