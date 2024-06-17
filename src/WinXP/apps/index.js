@@ -66,7 +66,7 @@ export const defaultAppState = [
     },
     resizable: true,
     minimized: false,
-    maximized: window.innerWidth < 800,
+    maximized: window.innerWidth < 450,
     id: genId(),
     zIndex: genIndex(),
   },
