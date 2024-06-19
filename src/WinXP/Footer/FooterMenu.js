@@ -3,11 +3,11 @@ import styled from 'styled-components';
 
 import SubMenu from 'components/SubMenu';
 import ie from 'assets/windowsIcons/ie.png';
-import mine from 'assets/minesweeper/mine-icon.png';
+// import mine from 'assets/minesweeper/mine-icon.png';
 import setAccess from 'assets/windowsIcons/227(32x32).png';
 import outlook from 'assets/windowsIcons/887(32x32).png';
 // import mediaPlayer from 'assets/windowsIcons/846(32x32).png';
-import messenger from 'assets/windowsIcons/msn.png';
+// import messenger from 'assets/windowsIcons/msn.png';
 import documents from 'assets/windowsIcons/308(32x32).png';
 import recentDocuments from 'assets/windowsIcons/301(32x32).png';
 import pictures from 'assets/windowsIcons/307(32x32).png';
@@ -28,6 +28,8 @@ import winamp from 'assets/windowsIcons/winamp.png';
 import notepad from 'assets/windowsIcons/327(32x32).png';
 import empty from 'assets/empty.png';
 import GalleryIco from 'assets/windowsIcons/307(32x32).png';
+import BerettaIco from 'assets/windowsIcons/beretta.png';
+import generiqueIco from 'assets/windowsIcons/generiqueIco.png';
 
 import { AllPrograms, ConnectTo, MyRecentDocuments } from './FooterMenuData';
 
@@ -57,8 +59,9 @@ function FooterMenu({ className, onClick }) {
           <Items
             onClick={onClick}
             items={[
-              { icon: mine, text: 'Minesweeper' },
-              { icon: notepad, text: 'Noteprix' },
+              { icon: BerettaIco, text: 'Beretta' },
+              { icon: generiqueIco, text: 'Générique' },
+              { icon: notepad, text: 'Prix_et_selections' },
               { icon: winamp, text: 'Winamp' },
               { icon: paint, text: 'Paint' },
               { icon: GalleryIco, text: 'PhotosDuFilm' },

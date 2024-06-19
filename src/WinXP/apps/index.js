@@ -20,11 +20,11 @@ import GalleryIco from 'assets/windowsIcons/GalleryIco.png';
 import PhotosDuFilm from './PhotosDuFilm';
 import PhotosDuTournage from './PhotosDuTournage';
 import BerettaIco from 'assets/windowsIcons/beretta.png';
-import Player from './Player';
+import Beretta from './Player';
 import generiqueIco from 'assets/windowsIcons/generiqueIco.png';
-import Player2 from './Player2';
-import Noteprix from './Noteprix';
-import Notecrit from './Notecrit';
+import Générique from './Player2';
+import Prix_et_selections from './Noteprix';
+import Critiques from './Notecrit';
 
 const gen = () => {
   let id = -1;
@@ -214,28 +214,28 @@ export const defaultIconState = [
     id: 7,
     icon: BerettaIco,
     title: 'Beretta',
-    component: Player,
+    component: Beretta,
     isFocus: false,
   },
   {
     id: 8,
     icon: generiqueIco,
     title: 'Générique',
-    component: Player2,
+    component: Générique,
     isFocus: false,
   },
   {
     id: 5,
     icon: notepadLarge,
     title: 'Sélections et Prix',
-    component: Noteprix,
+    component: Prix_et_selections,
     isFocus: false,
   },
   {
     id: 11,
     icon: notepadLarge,
     title: 'Critiques',
-    component: Notecrit,
+    component: Critiques,
     isFocus: false,
   },
 ];
@@ -315,12 +315,12 @@ export const appSettings = {
     minimized: false,
     // maximized: window.innerWidth < 800,
   },
-  Player: {
+  Beretta: {
     header: {
       icon: BerettaIco,
       title: 'Beretta',
     },
-    component: Player,
+    component: Beretta,
     defaultSize: {
       width: 646,
       height: 392,
@@ -331,14 +331,14 @@ export const appSettings = {
     },
     resizable: true,
     minimized: false,
-    // maximized: window.innerWidth < 800,
+    maximized: window.innerWidth < 800,
   },
-  Player2: {
+  Générique: {
     header: {
       icon: generiqueIco,
       title: 'Générique',
     },
-    component: Player2,
+    component: Générique,
     defaultSize: {
       width: 646,
       height: 392,
@@ -349,7 +349,7 @@ export const appSettings = {
     },
     resizable: true,
     minimized: false,
-    // maximized: window.innerWidth < 800,
+    maximized: window.innerWidth < 800,
   },
   Error: {
     header: {
@@ -410,12 +410,12 @@ export const appSettings = {
     // maximized: window.innerWidth < 500,
     multiInstance: true,
   },
-  Noteprix: {
+  Prix_et_selections: {
     header: {
       icon: notepad,
       title: 'Séléctions et Prix',
     },
-    component: Noteprix,
+    component: Prix_et_selections,
     defaultSize: {
       width: 460,
       height: 600,
@@ -429,12 +429,12 @@ export const appSettings = {
     maximized: window.innerWidth < 800,
     multiInstance: true,
   },
-  Notecrit: {
+  Critiques: {
     header: {
       icon: notepad,
       title: 'Critiques',
     },
-    component: Notecrit,
+    component: Critiques,
     defaultSize: {
       width: 460,
       height: 600,
@@ -498,8 +498,8 @@ export {
   Winamp,
   PhotosDuFilm,
   PhotosDuTournage,
-  Player,
-  Player2,
-  Noteprix,
-  Notecrit,
+  Beretta,
+  Générique,
+  Prix_et_selections,
+  Critiques,
 };
