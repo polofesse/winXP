@@ -398,7 +398,7 @@ export const appSettings = {
     },
     component: Notepad,
     defaultSize: {
-      width: 660,
+      width: 400,
       height: 500,
     },
     defaultOffset: {
@@ -407,7 +407,7 @@ export const appSettings = {
     },
     resizable: true,
     minimized: false,
-    maximized: window.innerWidth < 800,
+    maximized: window.innerWidth < 500,
     multiInstance: true,
   },
   Noteprix: {
