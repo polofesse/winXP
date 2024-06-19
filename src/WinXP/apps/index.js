@@ -305,7 +305,7 @@ export const appSettings = {
     component: Gallery2,
     defaultSize: {
       width: window.innerWidth,
-      height: 10,
+      height: window.innerWidth * (9 / 16) + 94,
     },
     defaultOffset: {
       x: (window.innerWidth - window.innerWidth) / 2,
