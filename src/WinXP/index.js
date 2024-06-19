@@ -240,6 +240,18 @@ function WinXP() {
       dispatch({ type: ADD_APP, payload: appSettings['My Computer'] });
     else if (o === 'Notepad')
       dispatch({ type: ADD_APP, payload: appSettings.Notepad });
+    else if (o === 'Noteprix')
+      dispatch({ type: ADD_APP, payload: appSettings.Noteprix });
+    else if (o === 'Notecrit')
+      dispatch({ type: ADD_APP, payload: appSettings.Notecrit });
+    else if (o === 'Player')
+      dispatch({ type: ADD_APP, payload: appSettings.Player });
+    else if (o === 'Player2')
+      dispatch({ type: ADD_APP, payload: appSettings.Player });
+    else if (o === 'PhotosDuFilm')
+      dispatch({ type: ADD_APP, payload: appSettings.PhotosDuFilm });
+    else if (o === 'PhotosDuTournage')
+      dispatch({ type: ADD_APP, payload: appSettings.PhotosDuTournage });
     else if (o === 'Winamp')
       dispatch({ type: ADD_APP, payload: appSettings.Winamp });
     else if (o === 'Paint')

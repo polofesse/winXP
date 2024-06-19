@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.90745a55.css",
-    "main.js": "/static/js/main.18439049.js",
+    "main.js": "/static/js/main.90aa0dc0.js",
     "reactPlayerPreview.js": "/static/js/reactPlayerPreview.341f2030.chunk.js",
     "static/media/beretta.png": "/static/media/beretta.2f5de0734d9aaca0fd95.png",
     "static/media/generiqueIco.png": "/static/media/generiqueIco.553021c4876f29899149.png",
@@ -17,11 +17,11 @@
     "index.html": "/index.html",
     "static/media/find.svg": "/static/media/find.303b87f499358979b1c66a3da1584e67.svg",
     "main.90745a55.css.map": "/static/css/main.90745a55.css.map",
-    "main.18439049.js.map": "/static/js/main.18439049.js.map",
+    "main.90aa0dc0.js.map": "/static/js/main.90aa0dc0.js.map",
     "reactPlayerPreview.341f2030.chunk.js.map": "/static/js/reactPlayerPreview.341f2030.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90745a55.css",
-    "static/js/main.18439049.js"
+    "static/js/main.90aa0dc0.js"
   ]
 }

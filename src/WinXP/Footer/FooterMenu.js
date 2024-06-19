@@ -6,7 +6,7 @@ import ie from 'assets/windowsIcons/ie.png';
 import mine from 'assets/minesweeper/mine-icon.png';
 import setAccess from 'assets/windowsIcons/227(32x32).png';
 import outlook from 'assets/windowsIcons/887(32x32).png';
-import mediaPlayer from 'assets/windowsIcons/846(32x32).png';
+// import mediaPlayer from 'assets/windowsIcons/846(32x32).png';
 import messenger from 'assets/windowsIcons/msn.png';
 import documents from 'assets/windowsIcons/308(32x32).png';
 import recentDocuments from 'assets/windowsIcons/301(32x32).png';
@@ -21,12 +21,13 @@ import help from 'assets/windowsIcons/747(32x32).png';
 import search from 'assets/windowsIcons/299(32x32).png';
 import run from 'assets/windowsIcons/743(32x32).png';
 import lock from 'assets/windowsIcons/546(32x32).png';
-import user from 'assets/windowsIcons/user.png';
+import user from 'assets/windowsIcons/user.jpeg';
 import shut from 'assets/windowsIcons/310(32x32).png';
 import allProgramsIcon from 'assets/windowsIcons/all-programs.ico';
 import winamp from 'assets/windowsIcons/winamp.png';
 import notepad from 'assets/windowsIcons/327(32x32).png';
 import empty from 'assets/empty.png';
+import GalleryIco from 'assets/windowsIcons/307(32x32).png';
 
 import { AllPrograms, ConnectTo, MyRecentDocuments } from './FooterMenuData';
 
@@ -41,7 +42,7 @@ function FooterMenu({ className, onClick }) {
     <div className={className}>
       <header>
         <img className="header__img" src={user} alt="avatar" />
-        <span className="header__text">User</span>
+        <span className="header__text">Ordinateur de Claude Conseil</span>
       </header>
       <section className="menu" onMouseOver={onMouseOver}>
         <hr className="orange-hr" />
@@ -57,11 +58,11 @@ function FooterMenu({ className, onClick }) {
             onClick={onClick}
             items={[
               { icon: mine, text: 'Minesweeper' },
-              { icon: notepad, text: 'Notepad' },
+              { icon: notepad, text: 'Noteprix' },
               { icon: winamp, text: 'Winamp' },
               { icon: paint, text: 'Paint' },
-              { icon: mediaPlayer, text: 'Windows Media Player' },
-              { icon: messenger, text: 'Windows Messenger' },
+              { icon: GalleryIco, text: 'PhotosDuFilm' },
+              { icon: GalleryIco, text: 'PhotosDuTournage' },
             ]}
           />
           <div style={{ flex: 1 }} />

@@ -17,8 +17,8 @@ import winamp from 'assets/windowsIcons/winamp.png';
 import paintLarge from 'assets/windowsIcons/680(32x32).png';
 import paint from 'assets/windowsIcons/680(16x16).png';
 import GalleryIco from 'assets/windowsIcons/GalleryIco.png';
-import Gallery from './Gallery';
-import Gallery2 from './Gallery2';
+import PhotosDuFilm from './PhotosDuFilm';
+import PhotosDuTournage from './PhotosDuTournage';
 import BerettaIco from 'assets/windowsIcons/beretta.png';
 import Player from './Player';
 import generiqueIco from 'assets/windowsIcons/generiqueIco.png';
@@ -57,16 +57,16 @@ export const defaultAppState = [
       icon: notepad,
     },
     defaultSize: {
-      width: 380,
-      height: 500,
+      width: 280,
+      height: 450,
     },
     defaultOffset: {
-      x: 130,
+      x: 90,
       y: 20,
     },
     resizable: true,
     minimized: false,
-    maximized: window.innerWidth < 450,
+    // maximized: window.innerWidth < 450,
     id: genId(),
     zIndex: genIndex(),
   },
@@ -85,7 +85,7 @@ export const defaultAppState = [
   //     y: 0,
   //   },
   //   resizable: true,
-  //   minimized: false,
+  //   minimized: true,
   //   // maximized: window.innerWidth < 800,
   //   id: genId(),
   //   zIndex: genIndex(),
@@ -200,14 +200,14 @@ export const defaultIconState = [
     id: 6,
     icon: GalleryIco,
     title: 'Photos',
-    component: Gallery,
+    component: PhotosDuFilm,
     isFocus: false,
   },
   {
     id: 9,
     icon: GalleryIco,
     title: 'Photos tournage',
-    component: Gallery2,
+    component: PhotosDuTournage,
     isFocus: false,
   },
   {
@@ -279,12 +279,12 @@ export const appSettings = {
     maximized: false,
     multiInstance: true,
   },
-  Gallery: {
+  PhotosDuFilm: {
     header: {
       icon: GalleryIco,
-      title: 'Photos',
+      title: 'PhotosDuFilm',
     },
-    component: Gallery,
+    component: PhotosDuFilm,
     defaultSize: {
       width: window.innerWidth,
       height: window.innerWidth * (9 / 16) + 94,
@@ -297,15 +297,15 @@ export const appSettings = {
     minimized: false,
     // maximized: window.innerWidth < 800,
   },
-  Gallery2: {
+  PhotosDuTournage: {
     header: {
       icon: GalleryIco,
       title: 'Photos Tournage',
     },
-    component: Gallery2,
+    component: PhotosDuTournage,
     defaultSize: {
       width: window.innerWidth,
-      height: window.innerWidth * (9 / 16) + 94,
+      height: window.innerHeight - 100,
     },
     defaultOffset: {
       x: (window.innerWidth - window.innerWidth) / 2,
@@ -399,15 +399,15 @@ export const appSettings = {
     component: Notepad,
     defaultSize: {
       width: 400,
-      height: 500,
+      height: 400,
     },
     defaultOffset: {
-      x: 270,
+      x: 70,
       y: 60,
     },
     resizable: true,
     minimized: false,
-    maximized: window.innerWidth < 500,
+    // maximized: window.innerWidth < 500,
     multiInstance: true,
   },
   Noteprix: {
@@ -496,8 +496,8 @@ export {
   MyComputer,
   Notepad,
   Winamp,
-  Gallery,
-  Gallery2,
+  PhotosDuFilm,
+  PhotosDuTournage,
   Player,
   Player2,
   Noteprix,
