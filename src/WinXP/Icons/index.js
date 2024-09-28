@@ -89,9 +89,9 @@ function Icon({
 
 const IconsContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr); // Crée deux colonnes de taille égale
+  grid-template-columns: repeat(3, 1fr); // Crée deux colonnes de taille égale
   align-items: center; // Centre les éléments verticalement dans chaque cellule
-  gap: 10px; // Espacement entre les icônes
+  gap: 6px; // Espacement entre les icônes
   position: absolute;
   margin-top: 30px;
   margin-left: 30px;

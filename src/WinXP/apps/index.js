@@ -25,6 +25,8 @@ import generiqueIco from 'assets/windowsIcons/generiqueIco.png';
 import Générique from './Player2';
 import Prix_et_selections from './Noteprix';
 import Critiques from './Notecrit';
+import SolitaireGame from './Solitaire/Solitaire';
+import spiderico from 'assets/windowsIcons/spider.png';
 
 const gen = () => {
   let id = -1;
@@ -238,6 +240,13 @@ export const defaultIconState = [
     component: Critiques,
     isFocus: false,
   },
+  {
+    id: 12,
+    icon: spiderico,
+    title: 'Solitaire',
+    component: SolitaireGame,
+    isFocus: false,
+  },
 ];
 
 export const appSettings = {
@@ -332,6 +341,24 @@ export const appSettings = {
     resizable: true,
     minimized: false,
     maximized: window.innerWidth < 800,
+  },
+  Solitaire: {
+    header: {
+      icon: BerettaIco,
+      title: 'Solitaire',
+    },
+    component: SolitaireGame,
+    defaultSize: {
+      width: 597,
+      height: 409,
+    },
+    defaultOffset: {
+      x: (window.innerWidth - window.innerWidth) / 2,
+      y: 0,
+    },
+    resizable: true,
+    minimized: false,
+    //maximized: window.innerWidth < 800,
   },
   Générique: {
     header: {
@@ -502,4 +529,5 @@ export {
   Générique,
   Prix_et_selections,
   Critiques,
+  SolitaireGame,
 };
